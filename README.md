@@ -1,20 +1,24 @@
 # Modren-Passowrd-Manager
 
-Modern Password Manager is a user-friendly open-source Python application with a modern graphical user interface (GUI) 
+Modern Password Manager is a user-friendly open-source Python application with a modern graphical user interface (GUI)
 
-## how to use 
+Save and Secure Password Manager
+
+## how to use
+
 ```
 git clone https://github.com/MominIqbal-1234/Modren-Password-Manager.git
 cd Modren-Password-Manager
 ```
 
-
 ## Run
+
 ```
 python Password-Manager.py
 ```
 
 ## Condentials
+
 ```
 username : admin
 passowrd : admin
