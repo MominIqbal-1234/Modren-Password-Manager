@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="{{ url_for('static', filename='bootstrap/jquery.js') }}"></script>
+
+    <script>
+
+window.history.forward()
+
+      function myFunction() {
+        var x = document.getElementById("password");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+      </script>
+  </head>
+  <body>
+  
+    <nav class="nav">
+
+      <a href="logout" class="nav-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+          <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+        </svg>
+        Logout
+      </a>
+      
+      <a class="nav-link" id="back" href="view_user">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+          <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+          <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+        </svg>
+        View</a>
+
+
+        <a class="nav-link" href="/mission">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-shield-lock" viewBox="0 0 16 16">
+            <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+            <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
+          </svg>
+          Our Mission</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Advance</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="nav-link" href="/change_password">Change Password</a>
+            </li>
+           
+            <li>
+              <a class="nav-link" href="/export_backup">Export Back-Up</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/import_backup">Import Back-Up</a>
+            </li>
+          </ul>
+        </li>
+    </nav>
+
+
+<div class="container my-3">
+    <form method="post" action="save_data">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" autocomplete="off" id="floatingInput" placeholder="Site URL" name="url" required>
+        <label for="floatingInput">Site URL - Site Info</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" autocomplete="off" id="floatingPassword" placeholder="Username - Email - Phone" name="username" required>
+        <label for="floatingPassword">Username - Email - Phone</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="password" class="form-control" autocomplete="off" id="password" placeholder="Password" name="password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="my-2">
+        <input type="checkbox" onclick="myFunction();" class="form-check-input" id="check_box">
+        <label class="form-check-label" for="exampleCheck1">Show Password</label>
+      </div>
+
+
+      <button type="submit" class="btn btn-primary my-2" style="width: 200px;">Save</button>
+    </form>
+  </div>
+
+
+
+  {% if message %}
+  <div class="container my-2">
+  <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+      <strong>Message ! </strong>{{message}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+  {% endif %}
+
+
+
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script>
+    
+    $('a').click(function (e){  
+        if (e.ctrlKey) {
+            return false;
+        }
+    });
+  </script>
+  </body>
+</html>
