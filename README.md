@@ -9,6 +9,7 @@ Save and Secure Password Manager
 ```
 git clone https://github.com/MominIqbal-1234/Modren-Password-Manager.git
 cd Modren-Password-Manager
+pip install -r requirements.txt
 ```
 
 ## Run
